@@ -1,7 +1,9 @@
 :root {
-	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	font-family: "SF Mono", "SFMono-Regular", Menlo, Monaco, Consolas,
+		"Liberation Mono", "Courier New", monospace;
 	line-height: 1.5;
 	font-weight: 400;
+	font-size: x-small;
 
 	color-scheme: light dark;
 	color: rgba(255, 255, 255, 0.87);
@@ -11,4 +13,96 @@
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+}
+
+.intro-video {
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+}
+
+.background-video {
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	transition: opacity 0.5s ease;
+}
+
+.overlay {
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.corner {
+	position: absolute;
+	width: 30%;
+}
+
+.top-left {
+	top: 30px;
+	left: 30px;
+}
+
+.top-right {
+	top: 30px;
+	right: 30px;
+}
+.times {
+	display: flex;
+	justify-content: end;
+}
+
+.bottom-left {
+	bottom: 30px;
+	left: 30px;
+	font-size: small;
+}
+
+.bottom-right {
+	width: 20%;
+	bottom: 30px;
+	right: 30px;
+}
+.nav {
+	display: flex;
+	justify-content: space-evenly;
+}
+.nav-tag {
+	cursor: pointer;
+}
+.nav-tag:hover {
+	text-decoration: underline;
+}
+
+.projects-table {
+	display: grid;
+	grid-template-columns: 1fr 30px 75px;
+	gap: 10px;
+	width: 100%;
+	align-items: center;
+}
+.project-name {
+	grid-column: 1;
+	text-align: left;
+}
+.project-number {
+	grid-column: 2;
+	text-align: right;
+	font-variant-numeric: tabular-nums;
+}
+.project-role {
+	grid-column: 3;
+	text-align: left;
 }
