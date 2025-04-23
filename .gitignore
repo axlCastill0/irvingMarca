@@ -24,6 +24,3 @@ dist-ssr
 *.sw?
 
 client/.vite
-client/dist/media
-client/public/media
-client/public/img

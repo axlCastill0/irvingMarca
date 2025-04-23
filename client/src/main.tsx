@@ -4,10 +4,7 @@ import "./index.css";
 import App from "./App.tsx";
 
 createRoot(document.getElementById("root")!).render(
-	<StrictMode>
-		<video autoPlay loop muted playsInline className="background-video">
-			<source src="./public/img/pruebaweb.mp4" type="video/mp4" />
-		</video>
-		<App />
-	</StrictMode>
+  <StrictMode>
+    <App />
+  </StrictMode>,
 );
