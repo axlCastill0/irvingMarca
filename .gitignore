@@ -23,8 +23,8 @@ dist-ssr
 *.sln
 *.sw?
 
-client/.vite
-client/dist/media
-client/dist/img
-client/public/media
-client/public/img
+.vite
+dist/media
+dist/img
+public/media
+public/img
