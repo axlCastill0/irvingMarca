@@ -24,7 +24,7 @@ dist-ssr
 *.sw?
 
 .vite
-dist/media
-dist/img
-public/media
-public/img
+dist/media/BG-WEB.mp4
+dist/media/RAFAGA.mp4
+public/media/BG-WEB.mp4
+public/media/RAFAGA.mp4
