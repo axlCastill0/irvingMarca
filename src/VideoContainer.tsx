@@ -25,7 +25,10 @@ function VideoContainer() {
 					onEnded={handleIntroEnd}
 					onError={(e) => console.error("Intro video error:", e)}
 				>
-					<source src="./media/RAFAGA.mp4" type="video/mp4" />
+					<source
+						src="http://localhost:8001/video/irving/RAFAGA.mp4"
+						type="video/mp4"
+					/>
 				</video>
 			)}
 			<video
@@ -36,7 +39,10 @@ function VideoContainer() {
 				style={{ opacity: introEnded ? 1 : 0 }}
 				onError={(e) => console.error("Background video error:", e)}
 			>
-				<source src="./media/BG-WEB.mp4" type="video/mp4" />
+				<source
+					src="http://localhost:8001/video/irving/BG-WEB.mp4"
+					type="video/mp4"
+				/>
 			</video>
 			{introEnded && (
 				<div className="overlay">
