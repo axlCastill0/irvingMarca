@@ -25,6 +25,4 @@ dist-ssr
 
 .vite
 dist/media
-dist/img
-public/media
-public/img
+public/video
