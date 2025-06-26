@@ -1,4 +1,4 @@
-import projects from "./projects.ts";
+import projects from "../utils/projects.ts";
 
 type Project = {
 	name: string;

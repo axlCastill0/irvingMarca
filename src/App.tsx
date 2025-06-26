@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Projects from "./projects/Projects.tsx";
+import Projects from "./components/Projects.tsx";
 
 function App() {
 	const getBcnTime = () =>
