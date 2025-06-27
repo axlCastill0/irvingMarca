@@ -1,3 +1,6 @@
+import { useState, useEffect } from "react";
+import "../about.css";
+
 function AboutPage() {
 	return (
 		<div>

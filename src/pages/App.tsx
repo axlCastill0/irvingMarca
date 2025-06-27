@@ -1,26 +1,9 @@
-import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import Projects from "../components/Projects";
+import Time from "../components/Time";
 
 function App() {
-	const getBcnTime = () =>
-		new Date().toLocaleTimeString("en-US", { timeZone: "Europe/Madrid" });
-	const getMxnTime = () =>
-		new Date().toLocaleTimeString("en-US", { timeZone: "America/Mexico_City" });
-
-	const [bcnTime, setBcnTime] = useState(getBcnTime());
-	const [mxnTime, setMxnTime] = useState(getMxnTime());
-
-	useEffect(() => {
-		const interval = setInterval(() => {
-			setBcnTime(getBcnTime());
-			setMxnTime(getMxnTime());
-		}, 1000);
-
-		return () => clearInterval(interval);
-	}, []);
-
 	return (
 		<>
 			<div className="center">
@@ -35,11 +18,7 @@ function App() {
 				audiovisual narratives
 			</div>
 			<div className="top-right corner">
-				<div className="times">
-					BCN {bcnTime}
-					<br />
-					MX {mxnTime}
-				</div>
+				<Time />
 			</div>
 			<div className="bottom-left corner">
 				IRVING MARCA
