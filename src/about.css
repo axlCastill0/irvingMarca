@@ -1,4 +1,54 @@
-:root {
-	background-color: #f0f0f0;
+.about-page {
 	color: #333;
+}
+
+.info-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+.information {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	padding: 0 10px;
+}
+
+img {
+	width: 5vw;
+}
+
+.corner {
+	position: absolute;
+	width: 30%;
+}
+
+.top-right {
+	top: 30px;
+	right: 30px;
+}
+.times {
+	display: flex;
+	justify-content: end;
+}
+
+.bottom-left {
+	bottom: 30px;
+	left: 30px;
+	font-size: small;
+}
+
+.bottom-right {
+	width: 20%;
+	bottom: 30px;
+	right: 30px;
+}
+
+a {
+	text-decoration: none;
+	color: #333;
+}
+a:hover {
+	text-decoration: underline;
 }
