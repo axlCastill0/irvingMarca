@@ -27,10 +27,14 @@ function App() {
 				<Projects />
 			</div>
 			<div className="top-left corner">
-				Based in Barcelona, Irving is a Mexican film director known for his
-				striking visual storytelling in advertising and documentary. His work
-				bridges cultures, blending artistry and emotion to create impactful
-				audiovisual narratives
+				Irving Marca is a Mexican director based between Barcelona and Paris
+				since 2021. His work moves fluidly between narrative and commercial
+				projects, ranging from fashion and automotive to sports and documentary.
+				With a blend of technical precision and organic sensibility, he explores
+				the interplay of light, emotion, and atmosphere to craft stories that
+				connect on a human level. Always curious and collaborative, he
+				approaches each project as an opportunity to experiment with new visual
+				languages and create images that stay with the viewer.
 			</div>
 			<div className="top-right corner">
 				<div className="times">
