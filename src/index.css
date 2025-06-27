@@ -96,6 +96,10 @@
 .nav-tag:hover {
 	text-decoration: underline;
 }
+a {
+	text-decoration: none;
+	color: white;
+}
 
 .projects-table {
 	display: grid;
@@ -108,12 +112,34 @@
 	grid-column: 1;
 	text-align: left;
 }
+.project-name {
+	grid-column: 1;
+	text-align: left;
+}
+.project-name-selected {
+	grid-column: 1;
+	text-align: left;
+	text-decoration: underline;
+}
+
 .project-number {
 	grid-column: 2;
 	text-align: right;
 	font-variant-numeric: tabular-nums;
 }
+.project-number-selected {
+	grid-column: 2;
+	text-align: right;
+	font-variant-numeric: tabular-nums;
+	text-decoration: underline;
+}
+
 .project-role {
 	grid-column: 3;
 	text-align: left;
+}
+.project-role-selected {
+	grid-column: 3;
+	text-align: left;
+	text-decoration: underline;
 }

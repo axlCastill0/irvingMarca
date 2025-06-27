@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
-import Projects from "./components/Projects.tsx";
+import { Link } from "react-router-dom";
+
+import Projects from "../components/Projects";
 
 function App() {
 	const getBcnTime = () =>
@@ -27,14 +29,10 @@ function App() {
 				<Projects />
 			</div>
 			<div className="top-left corner">
-				Irving Marca is a Mexican director based between Barcelona and Paris
-				since 2021. His work moves fluidly between narrative and commercial
-				projects, ranging from fashion and automotive to sports and documentary.
-				With a blend of technical precision and organic sensibility, he explores
-				the interplay of light, emotion, and atmosphere to craft stories that
-				connect on a human level. Always curious and collaborative, he
-				approaches each project as an opportunity to experiment with new visual
-				languages and create images that stay with the viewer.
+				Based in Barcelona / París, Irving is a Mexican film director known for
+				his striking visual storytelling in advertising and documentary. His
+				work bridges cultures, blending artistry and emotion to create impactful
+				audiovisual narratives
 			</div>
 			<div className="top-right corner">
 				<div className="times">
@@ -50,9 +48,18 @@ function App() {
 			</div>
 			<div className="bottom-right corner">
 				<div className="nav">
-					<span className="nav-tag">About</span>
-					<span className="nav-tag">Color</span>
-					<span className="nav-tag">Direction</span>
+					<Link className="nav-tag" to="/about">
+						About
+					</Link>
+					<span className="nav-tag">
+						<a
+							href="https://www.instagram.com/irving_marca/"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							Instagram
+						</a>
+					</span>
 				</div>
 			</div>
 		</>

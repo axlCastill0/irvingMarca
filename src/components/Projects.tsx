@@ -22,9 +22,19 @@ function Projects() {
 					onMouseLeave={() => setHoveredIndex(null)}
 					style={{ position: "relative" }}
 				>
-					<div className="project-name">{project.name}</div>
-					<div className="project-number">{project.number}</div>
-					<div className="project-role">{project.role}</div>
+					{hoveredIndex === index ? (
+						<>
+							<div className="project-name-selected">{project.name}</div>
+							<div className="project-number-selected">{project.number}</div>
+							<div className="project-role-selected">{project.role}</div>
+						</>
+					) : (
+						<>
+							<div className="project-name">{project.name}</div>
+							<div className="project-number">{project.number}</div>
+							<div className="project-role">{project.role}</div>
+						</>
+					)}
 				</div>
 			))}
 			{hoveredIndex !== null && (
