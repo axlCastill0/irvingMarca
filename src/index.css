@@ -8,6 +8,7 @@
 	color-scheme: light dark;
 	color: rgba(255, 255, 255, 0.87);
 	background-color: #fff;
+	overflow: hidden;
 
 	font-synthesis: none;
 	text-rendering: optimizeLegibility;
@@ -15,15 +16,8 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.intro-video {
-	position: absolute;
-	width: 100%;
-	height: 100vh;
-	top: 0;
-	left: 0;
-	object-fit: cover;
-}
-
+/* Video backgrounds */
+.intro-video,
 .background-video {
 	position: absolute;
 	width: 100%;
@@ -31,10 +25,13 @@
 	top: 0;
 	left: 0;
 	object-fit: cover;
+}
+.background-video {
 	transition: opacity 0.5s ease;
 	z-index: -2;
 }
 
+/* Project video overlay */
 .project-video {
 	position: fixed;
 	top: 50%;
@@ -45,6 +42,7 @@
 	z-index: -1;
 }
 
+/* Overlay for app content */
 .overlay {
 	position: absolute;
 	width: 100%;
@@ -56,51 +54,60 @@
 	align-items: center;
 }
 
+/* Corner positions */
 .corner {
 	position: absolute;
 	width: 30%;
 }
-
 .top-left {
 	top: 30px;
 	left: 30px;
 }
-
 .top-right {
 	top: 30px;
 	right: 30px;
 }
-.times {
-	display: flex;
-	justify-content: end;
-}
-
 .bottom-left {
 	bottom: 30px;
 	left: 30px;
 	font-size: small;
 }
-
 .bottom-right {
 	width: 20%;
 	bottom: 30px;
 	right: 30px;
 }
+
+/* Time display */
+.times {
+	display: flex;
+	justify-content: end;
+}
+
+/* Navigation */
 .nav {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: right;
+	color: white;
 }
 .nav-tag {
 	cursor: pointer;
+	color: #fff;
 }
 .nav-tag:hover {
 	text-decoration: underline;
 }
+
+/* Links (default for main site) */
 a {
 	text-decoration: none;
-	color: white;
+	color: inherit;
+}
+a:hover {
+	text-decoration: underline;
 }
 
+/* Projects grid */
 .projects-table {
 	display: grid;
 	grid-template-columns: 1fr 30px 75px;
@@ -108,38 +115,37 @@ a {
 	width: 100%;
 	align-items: center;
 }
-.project-name {
-	grid-column: 1;
-	text-align: left;
-}
-.project-name {
+.project-name,
+.project-name-selected {
 	grid-column: 1;
 	text-align: left;
 }
 .project-name-selected {
-	grid-column: 1;
-	text-align: left;
 	text-decoration: underline;
 }
-
-.project-number {
+.project-number,
+.project-number-selected {
 	grid-column: 2;
 	text-align: right;
 	font-variant-numeric: tabular-nums;
 }
 .project-number-selected {
-	grid-column: 2;
-	text-align: right;
-	font-variant-numeric: tabular-nums;
 	text-decoration: underline;
 }
-
-.project-role {
+.project-role,
+.project-role-selected {
 	grid-column: 3;
 	text-align: left;
 }
 .project-role-selected {
-	grid-column: 3;
-	text-align: left;
 	text-decoration: underline;
+}
+
+/* Center utility for About and others */
+.center {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }

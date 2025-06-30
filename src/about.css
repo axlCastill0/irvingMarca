@@ -2,53 +2,53 @@
 	color: #333;
 }
 
+/* About page links override */
+.about-page a,
+.nav-tag-about {
+	color: #333;
+}
+.about-page a:hover,
+.nav-tag-about:hover {
+	text-decoration: underline;
+}
+
+/* Info section */
 .info-container {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 100vh;
 }
 .information {
 	display: flex;
 	flex-direction: column;
 	margin: 0;
 	padding: 0 10px;
+	align-self: flex-start;
+}
+.information p:last-of-type {
+	margin-top: 1em;
 }
 
-img {
-	width: 5vw;
+/* Profile image */
+img.pfp {
+	width: 80px;
 }
 
-.corner {
+/* Description below info, centered horizontally */
+.description-container {
 	position: absolute;
-	width: 30%;
+	top: 75%;
+	width: 50%;
+	text-align: center;
 }
 
-.top-right {
-	top: 30px;
-	right: 30px;
-}
-.times {
-	display: flex;
-	justify-content: end;
+/* Remove default margin/padding from p */
+.about-page p {
+	margin: 0;
+	padding: 0;
 }
 
-.bottom-left {
-	bottom: 30px;
-	left: 30px;
-	font-size: small;
-}
-
-.bottom-right {
-	width: 20%;
-	bottom: 30px;
-	right: 30px;
-}
-
-a {
-	text-decoration: none;
+.nav-tag-about {
+	cursor: pointer;
 	color: #333;
-}
-a:hover {
-	text-decoration: underline;
 }

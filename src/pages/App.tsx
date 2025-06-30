@@ -6,7 +6,7 @@ import Time from "../components/Time";
 function App() {
 	return (
 		<>
-			<div className="center">
+			<div>
 				<em>SELECTED PROJECTS</em>
 				<br />
 				<Projects />
@@ -30,15 +30,6 @@ function App() {
 					<Link className="nav-tag" to="/about">
 						About
 					</Link>
-					<span className="nav-tag">
-						<a
-							href="https://www.instagram.com/irving_marca/"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							Instagram
-						</a>
-					</span>
 				</div>
 			</div>
 		</>
