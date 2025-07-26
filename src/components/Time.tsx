@@ -1,5 +1,15 @@
 import { useState, useEffect } from "react";
 
+function matchTimeLength(mexico: string, barcelona: string) {
+	if (barcelona.length - mexico.length === 1) {
+		return "\u00A0\u00A0\u00A0" + mexico;
+	} else if (barcelona.length === mexico.length) {
+		return "\u00A0\u00A0" + mexico;
+	} else {
+		return "\u00A0" + mexico;
+	}
+}
+
 function Time() {
 	const getBcnTime = () =>
 		new Date().toLocaleTimeString("en-US", { timeZone: "Europe/Madrid" });
@@ -22,7 +32,7 @@ function Time() {
 		<div className="times">
 			BCN {bcnTime}
 			<br />
-			MX {mxnTime}
+			MX{matchTimeLength(mxnTime, bcnTime)}
 		</div>
 	);
 }

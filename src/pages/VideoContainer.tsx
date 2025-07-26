@@ -26,7 +26,7 @@ function VideoContainer() {
 					onError={(e) => console.error("Intro video error:", e)}
 				>
 					<source
-						src="http://localhost:8001/video/irving/RAFAGA.mp4"
+						src="https://api.redtako.ca/video/irving/RAFAGA.mp4"
 						type="video/mp4"
 					/>
 				</video>
@@ -40,7 +40,7 @@ function VideoContainer() {
 				onError={(e) => console.error("Background video error:", e)}
 			>
 				<source
-					src="http://localhost:8001/video/irving/BG-WEB.mp4"
+					src="https://api.redtako.ca/video/irving/BG-WEB.mp4"
 					type="video/mp4"
 				/>
 			</video>

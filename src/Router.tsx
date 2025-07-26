@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import VideoContainer from "./pages/VideoContainer";
+import VideoContainer from "./pages/VideoContainer.tsx";
 import AboutPage from "./pages/AboutPage";
 
 function Router() {
