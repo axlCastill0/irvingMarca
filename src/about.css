@@ -25,13 +25,20 @@
 	padding: 0 10px;
 	align-self: flex-start;
 }
-.information p:last-of-type {
+.information a:last-of-type {
 	margin-top: 1em;
 }
 
 /* Profile image */
 img.pfp {
 	width: 80px;
+}
+img.axl {
+	width: 20px;
+	height: 20px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: transparent transparent transparent #333;
 }
 
 /* Description below info, centered horizontally */

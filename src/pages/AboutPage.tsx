@@ -28,7 +28,13 @@ function AboutPage() {
 						>
 							Vimeo
 						</a>
-						<p>1/2 _________Límite</p>
+						<a
+							href="https://www.instagram.com/limite_________________?utm_source=ig_web_button_share_sheet"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							1/2 _________Límite
+						</a>
 					</div>
 				</div>
 				<p className="description-container">
@@ -50,6 +56,15 @@ function AboutPage() {
 			</div>
 			<div className="top-right corner">
 				<Time />
+			</div>
+			<div className="top-left corner">
+				<a
+					href="https://www.linkedin.com/in/axlcastillo/"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<img className="axl" src="/axlLogo.png" alt="Made by Axl Castillo" />
+				</a>
 			</div>
 			<div className="bottom-right corner">
 				<div className="nav">
